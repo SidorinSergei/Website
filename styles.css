@@ -1,0 +1,405 @@
+/* Общие стили для всех экранов */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('/fonts/RobotoSlab-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.logo-text {
+    margin-top: 10px;
+    font-size: 4vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.image-container {
+    position: relative;
+}
+
+
+
+.block:first-child .image-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.block:first-child .logo {
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.block img {
+    width: 100%;
+}
+
+.block {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.block2-text{
+    max-width: 20%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.block2-circle {
+    margin: 10px 0;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 10vw;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+.circle-text {
+    color: #d38989;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3vw; /* Размер текста будет составлять 5% от ширины окна просмотра */
+}
+
+.block2-img {
+    position: absolute;
+    top: 60vw;
+    right: 15%;
+    width: 100%;
+    height: auto;
+    max-width: 16vw; /* максимальная ширина фото */
+    z-index: 3;
+}
+
+.block2-text2 {
+    position: absolute;
+    top: 85vw;
+    right: 15%;
+    width: 100%;
+    font-size: 2vw;
+    color: white;
+    text-align: right;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+}
+.block2-text3 {
+    position: absolute;
+    top: 90vw;
+    right: 15%;
+    width: 100%;
+    font-size: 4vw;
+    color: white;
+    text-align: right;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+}
+
+.block .icons-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.block .icon {
+    text-align: center;
+    width: calc(25% - 10px);
+}
+
+.block .icon h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+}
+
+.block .icon p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ffffff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+}
+
+.block .icon img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom: 10px;
+    color: white;
+}
+.icon{
+    color: white;
+}
+.circle2 {
+    position: absolute;
+    margin-top: 8%;
+    left: 50%;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+.block4-circle {
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    transform: translate(30%, -70%);
+    background-color: pink;
+    border-radius: 50%;
+}
+.block4-text {
+    transform: translate(-10%, -130%);
+     font-size: 4vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+     font-weight: bold;
+     color: #fff;
+     font-family: 'RobotoSlab', Arial, sans-serif;
+     letter-spacing: 2px;
+    text-align: right;
+ }
+.block4-text1 {
+    transform: translate(-10%, -65%);
+    font-size: 2vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: right;
+}
+#back-to-top {
+    z-index: 9999;
+    font-size: 4vw;
+    border-radius: 0%;
+    background-color: #f5a4a4;
+    color: #fff;
+    text-decoration: none;
+}
+.cnop{
+    transform: translate(40%, -180%);
+}
+.block5-text{
+    position: absolute;
+    margin-top: 8%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#text11{
+    margin-top: -40vw;
+    margin-left: -45vw;
+    font-size: 2vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+}
+#text12{
+    margin-top: 2vw;
+    margin-left: -45vw;
+    font-size: 4vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 35vw;
+}
+#text13{
+    margin-top: -28vw;
+    margin-left: 10vw;
+    font-size: 1.4vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 35vw;
+}
+.block-img{
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+    width: 30vw;
+    height: 35vw;
+}
+.block-img1{
+    margin-top: 7vw;
+    margin-left: 65vw;
+    width: 30vw;
+    height: 35vw;
+}
+#text14{
+    margin-top: -80vw;
+    margin-left: -44vw;
+    font-size: 3vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 22vw;
+}
+#text15{
+    margin-top: 1vw;
+    margin-left: -44vw;
+    font-size: 1.4vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 30vw;
+}
+#text16{
+    margin-top: 13vw;
+    margin-left: 15vw;
+    font-size: 1.4vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 30vw;
+}
+
+.circle3 {
+    position: absolute;
+    left: 50%;
+    margin-top: 5vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+.block7-circle {
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    transform: translate(-160%, -490%);
+    background-color: pink;
+    border-radius: 50%;
+}
+.block9-img1{
+    margin-top: 7vw;
+    margin-bottom: -55vw;
+    width: 100vw;
+    height: 100vw;
+}
+.block10-text{
+    position: absolute;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#text17{
+    margin-top: -30vw;
+    margin-left: -25vw;
+    font-size: 1vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 9vw;
+
+}
+#text18{
+    margin-top: -16vw;
+    margin-left: -30vw;
+    font-size: 3vw; /* Размер текста будет составлять 3% от ширины окна просмотра */
+    font-weight: bold;
+    color: #fff;
+    font-family: 'RobotoSlab', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    max-width: 30vw;
+}
